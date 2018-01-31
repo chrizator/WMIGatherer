@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WMIGatherer", "WMIGatherer\WMIGatherer.csproj", "{8443827B-4E78-41E0-B2D9-C55DF3D2158A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleProgram", "ExampleProgram\ExampleProgram.csproj", "{E0DDE238-B4BF-40C5-8EED-7186F0ABD18B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8443827B-4E78-41E0-B2D9-C55DF3D2158A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8443827B-4E78-41E0-B2D9-C55DF3D2158A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8443827B-4E78-41E0-B2D9-C55DF3D2158A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8443827B-4E78-41E0-B2D9-C55DF3D2158A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0DDE238-B4BF-40C5-8EED-7186F0ABD18B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0DDE238-B4BF-40C5-8EED-7186F0ABD18B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0DDE238-B4BF-40C5-8EED-7186F0ABD18B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0DDE238-B4BF-40C5-8EED-7186F0ABD18B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EE91EC53-ECB6-4F4F-B203-FA97B0532B6E}
+	EndGlobalSection
+EndGlobal

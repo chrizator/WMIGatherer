@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8443827B-4E78-41E0-B2D9-C55DF3D2158A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WMIGatherer</RootNamespace>
+    <AssemblyName>WMIGatherer</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Management" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Enums\HwidStrength.cs" />
+    <Compile Include="Enums\SecurityProductType.cs" />
+    <Compile Include="Gathering\BiosGatherer.cs" />
+    <Compile Include="Gathering\HardwareGatherer.cs" />
+    <Compile Include="Gathering\NetGatherer.cs" />
+    <Compile Include="Gathering\OsGatherer.cs" />
+    <Compile Include="Gathering\SecurityGatherer.cs" />
+    <Compile Include="Gathering\UserGatherer.cs" />
+    <Compile Include="Objects\BaseBoard.cs" />
+    <Compile Include="Objects\GraphicsCard.cs" />
+    <Compile Include="Objects\HardDrive.cs" />
+    <Compile Include="Objects\NetworkAdapter.cs" />
+    <Compile Include="Objects\Processor.cs" />
+    <Compile Include="Objects\RamStick.cs" />
+    <Compile Include="Objects\SecurityProduct.cs" />
+    <Compile Include="Objects\UserAccount.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\Crypto.cs" />
+    <Compile Include="Wmi.cs" />
+    <Compile Include="WmiClass.cs" />
+    <Compile Include="WmiClassCollection.cs" />
+    <Compile Include="WmiProperty.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
