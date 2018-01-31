@@ -1,5 +1,3 @@
-# WMIGatherer
-A WMI wrapper and system information gathering library
 # WMIGatherer - A WMI wrapper and system information gatherer
 WMIGatherer provides simple and easy WMI querying and already contains functionality to gather useful system informations.
 ## Usage
