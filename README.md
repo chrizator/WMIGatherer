@@ -16,7 +16,6 @@ string[] properties = new string[] { "Capacity", "PositionInRow" };
 string condition = "PositionInRow = 1";
 WmiClassCollection classCollection = Wmi.Query("Win32_PhysicalMemory", properties, condition);
 ```
-<br>
 If a **custom** query string (WQL syntax) needs to be used:
 ```cs
 WmiClassCollection classCollection = Wmi.CustomQuery("FROM Win32_Bios SELECT Name, Caption");
