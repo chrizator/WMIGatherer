@@ -31,7 +31,7 @@ WmiClassCollection classCollection = Wmi.CustomQuery("FROM Win32_Bios SELECT Nam
 ```cs
 foreach (WmiClass wmiClass in classCollection)
 {
-	uint? posInRow = wmiClass["PositionInRow"];
+    uint? posInRow = wmiClass["PositionInRow"];
     ulong? capacity = wmiClass["Capacity"];
     // Do something with it...
 }
@@ -58,7 +58,7 @@ var antiviruses = SecurityGatherer.GetSecurityProducts(SecurityProductType.AntiV
 
 foreach (var av in antiviruses)
 {
-	string name = av.Name;
+    string name = av.Name;
     string path = av.PathToExe;
     // Do something with it...
 }
@@ -88,7 +88,7 @@ using WMIGatherer.Gathering;
 var ramSticks = HardwareGatherer.GetRamSticks();
 foreach (var stick in ramSticks)
 {
-	ulong? capacity = stick.Capacity;
+    ulong? capacity = stick.Capacity;
     uint? clockSpeed = stick.ClockSpeed;
     // ...
     // Do something with it...
