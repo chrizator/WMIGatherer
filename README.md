@@ -10,7 +10,6 @@ string windowsCaption = Wmi.PropertyQuery<string>("Win32_OperatingSystem", "Capt
 ```cs
 ulong? capacity = Wmi.PropertyQuery<ulong?>("Win32_PhysicalMemory", "Capacity");
 ```
-<br>
 If **multiple** properties or **multiple** WMI classes are required:
 ```cs
 string[] properties = new string[] { "Capacity", "PositionInRow" };
