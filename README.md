@@ -18,7 +18,7 @@ WmiClassCollection classCollection = Wmi.Query("Win32_PhysicalMemory", propertie
 ```
 If a **custom** query string (WQL syntax) needs to be used:
 ```cs
-WmiClassCollection classCollection = Wmi.CustomQuery("FROM Win32_Bios SELECT Name, Caption");
+WmiClassCollection classCollection = Wmi.CustomQuery("SELECT Name, Caption FROM Win32_Bios");
 ```
 #### What to do with ```WmiClassCollection```
 - ```WmiClassCollection``` is an ```ICollection``` of all queried classes (```WmiClass```)
